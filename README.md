@@ -51,6 +51,7 @@
 ## UML Diagram
 
 ## Wireframes
+[Wireframes](https://www.figma.com/file/9IZzMQcxoVd3SswUagdl0o/Untitled?node-id=0%3A1)
 
 ## Getting started
 ### Pre-reqs
