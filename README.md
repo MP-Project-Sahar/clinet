@@ -34,6 +34,7 @@
     <li><a href="#uml-diagram">UML Diagram</a></li>
     <li><a href="#wireframes">Wireframes</a></li>
     <li><a href="#getting-started">Getting Started</a></li>
+    <li><a href="#project-structure">Project Structure</a></li>
     <li><a href="#react-router-routes">React Router Routes</a></li>
     <li><a href="#components">Components</a></li>
    </ul>
@@ -129,9 +130,9 @@ $ npm start
 
 ## Project Structure
 
-## API Documentation
+## React Router Routes
 
-## Error Handling
+## Components
 
 
 
