@@ -148,8 +148,8 @@ $ npm start
 | `/Profile`        | Profile              | user and admin             | User edit profile and show items                             |
 | `/Inbox`          | Inbox                | user                       | Inbox messages                                               |
 | `/Chat`           | Chat                 | user                       | User send message                                            |
-| `/Rentals`        | Rentals              | user                       | Rentals items                                                |
-| `/Favourites`     | Favourites           | user                       | Favourites itrms                                             |
+| `/Rentals`        | Rentals              | user                       | The items you've rented from other                           |
+| `/Favourites`     | Favourites           | user                       | The items and owners you favourite                           |
 | `/UserProfile`    | UserProfile          | user and admin             | User show a user show rental shop, reviews                   |
 | `/HowItWorks`     | HowItWorks           | anyone                     | How to rent on website                                       |
 | `/NavBar`         | NavBar               | anyone                     | Transction in website                                        |
