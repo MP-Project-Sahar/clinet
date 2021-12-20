@@ -102,6 +102,7 @@
 - As an admin,  I can delete, edit rating
 
 ## UML Diagram
+<img src="https://user-images.githubusercontent.com/92248067/146735595-64384873-0629-4f97-b8de-d8eb697ac615.jpg" width="500">
 
 ## Wireframes
 [Wireframes](https://www.figma.com/file/9IZzMQcxoVd3SswUagdl0o/Untitled?node-id=0%3A1)
@@ -131,10 +132,47 @@ $ npm start
 ## Project Structure
 
 ## React Router Routes
+| Path              | Component            | Permissions                | Behavior                                                     |
+| ----------------- | -------------------- | -------------------------- | ------------------------------------------------------------ |
+| `/`               | Home                 | anyone                     | Home page                                                    |
+| `/items/:section` | items                | anyone                     | Show items in one type                                       |
+| `/Item`           | Item                 | anyone                     | Show one itme                                                |
+| `/Signup`         | Signup               | anyone                     | Signup form, link to posts if user or to dashboard if admin  |
+| `/Login`          | Signin               | anyone                     | Signin form, link to posts if user or to dashboard if admin  |
+| `/LoginGoogle`    | SigninGoogle         | anyone have google account | Signin form, link to post                                    |
+| `/ForgotPassword` | ForgotPassword       | anyone                     | Forgot password form, user enter an email                    |
+| `/ResetPassword`  | ResetPassword        | user who received an email | Reset password form, user enter a new password               |
+| `/ActivateAccount`| ActivateAccount      | user who received an email | Activate user account                                        |
+| `/Dashboard`      | Dashboard            | admin only                 | Shows all users                                              |
+| `/ListItem`       | ListItem             | user                       | User's add ads.                                              |
+| `/Profile`        | Profile              | user and admin             | User edit profile and show items                             |
+| `/Inbox`          | Inbox                | user                       | Inbox messages                                               |
+| `/Chat`           | Chat                 | user                       | User send message                                            |
+| `/Rentals`        | Rentals              | user                       | Rentals items                                                |
+| `/Favourites`     | Favourites           | user                       | Favourites itrms                                             |
+| `/UserProfile`    | UserProfile          | user and admin             | User show a user show rental shop, reviews                   |
+| `/HowItWorks`     | HowItWorks           | anyone                     | How to rent on website                                       |
+| `/NavBar`         | NavBar               | anyone                     | Transction in website                                        |
+
 
 ## Components
-
-
+- Home
+- items
+- Signup
+- Signin
+- SigninGoogle
+- ForgotPassword
+- ResetPassword
+- ActivateAccount
+- Dashboard
+- ListItem
+- Profile
+- Inbox
+- Chat
+- Rentals
+- Favourites
+- UserProfile
+- HowItWorks
 
 <p align="right"><a href="#top">back to top</a></p>
 
