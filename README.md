@@ -152,10 +152,10 @@ $ npm start
 | `/Favourites`     | Favourites           | user                       | The items and owners you favourite                           |
 | `/UserProfile`    | UserProfile          | user and admin             | User show a user show rental shop, reviews                   |
 | `/HowItWorks`     | HowItWorks           | anyone                     | How to rent on website                                       |
-| `/NavBar`         | NavBar               | anyone                     | Transction in website                                        |
 
 
 ## Components
+- NavBar
 - Home
 - items
 - Signup
@@ -173,6 +173,7 @@ $ npm start
 - Favourites
 - UserProfile
 - HowItWorks
+- Footer
 
 <p align="right"><a href="#top">back to top</a></p>
 
