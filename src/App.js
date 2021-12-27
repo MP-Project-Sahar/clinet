@@ -3,17 +3,20 @@ import { Routes, Route } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
+import LoginOrSignup from "./components/LoginOrSignup";
 import Dashboard from "./components/Dashboard";
 import Inbox from "./components/Inbox";
 import Rentals from "./components/Rentals";
 import Favorites from "./components/Favorites";
 import Profile from "./components/Profile";
-import Dashboard from "./components/Dashboard";
-
+import ListItem from "./components/ListItem";
+import Instruction from "./components/Instruction";
+import NotFound from "./components/NotFound";
 
 function App() {
   return (
     <>
+      <h1>HI</h1>
       <NavBar />
       <Routes>
         <Route exact path="/" element={<Home />} />
