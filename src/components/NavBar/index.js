@@ -4,10 +4,9 @@ import { Link } from "react-router-dom";
 function NavBar() {
   return (
     <>
-    <h1>Nav</h1>
       <ul>
         <Link to="/listItem">
-          <li>إضافة</li>
+          <li>اضف منتجك</li>
         </Link>
         <Link to="instruction">
           <li>كيف يعمل</li>

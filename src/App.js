@@ -16,7 +16,6 @@ import NotFound from "./components/NotFound";
 function App() {
   return (
     <>
-      <h1>HI</h1>
       <NavBar />
       <Routes>
         <Route exact path="/" element={<Home />} />
