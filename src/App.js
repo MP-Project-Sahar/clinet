@@ -12,6 +12,8 @@ import Profile from "./components/Profile";
 import ListItem from "./components/ListItem";
 import Instruction from "./components/Instruction";
 import NotFound from "./components/NotFound";
+import Item from "./components/Item";
+
 
 function App() {
   const { pathname } = useLocation();
@@ -30,6 +32,7 @@ function App() {
         <Route exact path="/Profile" element={<Profile />} />
         <Route exact path="/ListItem" element={<ListItem />} />
         <Route exact path="/Instruction" element={<Instruction />} />
+        <Route exact path="/Item" element={<Item />} />
         <Route path="*" element={<Navigate to="/404" />} />
         <Route exact path="/404" element={<NotFound />} />
       </Routes>
