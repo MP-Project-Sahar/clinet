@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation, Navigate } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
@@ -14,9 +14,12 @@ import Instruction from "./components/Instruction";
 import NotFound from "./components/NotFound";
 
 function App() {
+  const { pathname } = useLocation();
+
   return (
     <>
-      <NavBar />
+      {pathname !== "/404" && <NavBar />}
+
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route exact path="/LoginOrSignup" element={<LoginOrSignup />} />
@@ -27,9 +30,11 @@ function App() {
         <Route exact path="/Profile" element={<Profile />} />
         <Route exact path="/ListItem" element={<ListItem />} />
         <Route exact path="/Instruction" element={<Instruction />} />
-        <Route exact path="*" element={<NotFound />} />
+        <Route path="*" element={<Navigate to="/404" />} />
+        <Route exact path="/404" element={<NotFound />} />
       </Routes>
-      <Footer />
+
+      {pathname !== "/404" && <Footer />}
     </>
   );
 }
