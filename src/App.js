@@ -22,18 +22,18 @@ function App() {
 
       <Routes>
         <Route exact path="/" element={<Home />} />
-        <Route exact path="LoginOrSignup" element={<LoginOrSignup />} />
-        <Route exact path="Dashboard" element={<Dashboard />} />
-        <Route exact path="Inbox" element={<Inbox />} />
-        <Route exact path="Rentals" element={<Rentals />} />
-        <Route exact path="Favorites" element={<Favorites />} />
-        <Route exact path="Profile" element={<Profile />} />
-        <Route exact path="ListItem" element={<ListItem />} />
-        <Route exact path="Instruction" element={<Instruction />} />
+        <Route exact path="/LoginOrSignup" element={<LoginOrSignup />} />
+        <Route exact path="/Dashboard" element={<Dashboard />} />
+        <Route exact path="/Inbox" element={<Inbox />} />
+        <Route exact path="/Rentals" element={<Rentals />} />
+        <Route exact path="/Favorites" element={<Favorites />} />
+        <Route exact path="/Profile" element={<Profile />} />
+        <Route exact path="/ListItem" element={<ListItem />} />
+        <Route exact path="/Instruction" element={<Instruction />} />
         <Route path="*" element={<Navigate to="/404" />} />
         <Route exact path="/404" element={<NotFound />} />
       </Routes>
-      
+
       {pathname !== "/404" && <Footer />}
     </>
   );
